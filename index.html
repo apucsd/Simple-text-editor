@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e28dbc410.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="" style="background: #eceff1;">
+    <section class="md:w-4/5 mx-auto mt-10  p-8 " style=" 
+    box-shadow: 10px 10px 15px #dddfe3,
+                -10px -10px 15px rgba(255, 255, 255, 0.578);">
+        <h1 class="text-4xl font-semibold text-center font-mono italic">My Text Editor</h1>
+        <br>
+        <div class="p-4  bg-blue-100  border border-black ">
+            <div class="text-center w-11/12 grid  grid-cols-3 bg-blue-100 justify-between p-3 border-b-2 border-indigo-400">
+                <div class="flex gap-4  items-center">
+                    <h1 onclick="bold()"><i class="fa-solid fa-bold  cursor-pointer"></i></h1>
+                    <h1 onclick="italic()"><i class="fa-solid fa-italic cursor-pointer"></i></h1>
+                    <h1 onclick="underline()"><i class="fa-solid fa-underline cursor-pointer"></i></h1>
+                </div>
+                <div class="flex gap-4  items-center">
+                    <h1 onclick="leftAlign()"><i class="fa-solid fa-align-left cursor-pointer"></i></h1>
+                    <h1 onclick="centerAlign()"><i class="fa-solid fa-align-center cursor-pointer"></i></h1>
+                    <h1 onclick="rightAlign()"><i class="fa-solid fa-align-right cursor-pointer"></i></h1>
+                </div>
+                <div class="md:flex gap-4  items-center">
+                    <input  class="w-12 rounded border px-1 focus:outline-none" value="16" min="12" max="60" type="number" name="" id="fontSize">
+                    <h1 onclick="textTransform()"><i class="fa-solid fa-font cursor-pointer"></i></h1>
+                    <input id='color' class="md:w-1/4 rounded cursor-pointer " type="color" name="" id="">
+                </div>
+            
+            </div>
+            <br>
+
+
+            <textarea  class="w-full h-80 focus:outline-none p-3 resize-none" name="" id="text" placeholder="Write your future here..."></textarea>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- js file  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
